@@ -18,14 +18,11 @@ namespace Full_GRASP_And_SOLID
         {
             this.steps.Remove(step);
         }
-
-        // Método CreateStep crear un nuevo paso
         public Step CreateStep(Product input, double quantity, Equipment equipment, int time)
         {
             return new Step(input, quantity, equipment, time);
         }
 
-        // Método GetTextToPrint para llegar a la representación de la receta
         public string GetTextToPrint()
         {
             string result = $"Receta de {this.FinalProduct.Description}:\n";
@@ -38,7 +35,7 @@ namespace Full_GRASP_And_SOLID
             return result;
         }
 
-        // Método para obtener el costo de producción de la receta
+      
         public double GetProductionCost()
         {
             double result = 0;

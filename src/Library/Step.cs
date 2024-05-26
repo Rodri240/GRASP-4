@@ -24,7 +24,7 @@ namespace Full_GRASP_And_SOLID
 
         public Equipment Equipment { get; set; }
 
-        // Agregado por Expert
+        
         public double GetStepCost()
         {
             return
@@ -32,7 +32,7 @@ namespace Full_GRASP_And_SOLID
                 (this.Equipment.HourlyCost * this.Time);
         }
 
-        // Agregado por SRP
+        
         public string GetTextToPrint()
         {
             return $"{this.Quantity} de '{this.Input.Description}' " +
